@@ -1,0 +1,140 @@
+// Place all the styles related to the Static_Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.HomeCarousel {
+  position: relative;
+}
+
+
+.regular {
+     margin: 0;
+     background-color:#FFFFF;
+ }
+
+/**************************************/
+
+/* Verticalizes whatever on the screen */
+.vert-table {
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+
+.vert-tablecell {
+  height: 100%; 
+  display:table-cell; 
+  vertical-align: middle;
+}
+
+/**************************************/
+
+/* Ensures that the carousel slide on home page is full screen on any screen */
+
+.carousel,.item,.active {
+  width: 100%; 
+  height:100%;
+}
+.carousel-inner {
+  width: 100%; 
+  height:100%;
+}
+.fill { 
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size:cover;
+}
+/****************************************/
+
+/* Since full screen image is a background image, background-color for carousel controls must be transparent, not black */
+
+.carousel-control:hover {
+  background-color:transparent;
+}
+
+/****************************************/
+
+/* Border for each category in the request form*/
+.box {
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    color: #555555;
+    }
+
+/****************************************/
+
+/* Creates opaque container */
+.opaque-container {
+
+    /* Optional rounded border
+    border-top-left-radius: 50px 50px;
+    border-bottom-left-radius: 50px 50px;
+    border-bottom-right-radius: 50px 50px;
+    border-top-right-radius: 50px 50px; 
+    */
+
+    background-color: white;
+    z-index: 1000;
+    opacity: 1;
+    padding: 20px 20px 20px 20px;
+}
+
+/****************************************/
+
+/* Creates the floating home container about the carousel */
+
+.home-float {
+  width: 80%;
+  top: 5%;
+  left: 10%;
+  background-color: black;
+  position:absolute;
+  opacity: 0.8;
+  z-index: 1000;
+  padding: 5px 20px 5px 20px;
+
+  color:white;
+  font-size: 150%;
+  text-align: center;
+}
+
+.home-btn {
+  color:black;
+  background-color: white;
+  opacity: 1;
+}
+
+.home-share {
+  position:absolute;
+  top:10%;
+  left:80%;
+  width:20%;
+}
+
+/*************************************************************/
